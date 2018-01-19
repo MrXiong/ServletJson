@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <!--  <servlet-name>和<servlet-class>，分别用于设置Servlet的注册名称和Servlet的完整类名。  -->
+  <servlet>
+    <servlet-name>GetUserServlet</servlet-name>
+    <servlet-class>com.zx.demo.GetUserServlet</servlet-class>
+  </servlet>
+
+  <!-- <servlet-name>和<url-pattern>，分别用于指定Servlet的注册名称和Servlet的对外访问路径 -->
+  <servlet-mapping>
+    <servlet-name>GetUserServlet</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+  
+<!--  <servlet-mapping>
+    <servlet-name>GetUserServlet</servlet-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </servlet-mapping>-->
+
+
+  <!-- 　同一个Servlet可以被映射到多个URL上，即多个<servlet-mapping>元素的<servlet-name>子元素的设置值可以是同一个Servlet的注册名。 -->
+
+</web-app>
